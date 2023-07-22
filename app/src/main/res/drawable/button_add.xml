@@ -1,0 +1,15 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <solid android:color="#252525" />
+            <corners android:radius="25dp" />
+        </shape>
+    </item>
+
+
+    <item
+        android:drawable="@drawable/icon_add"
+        android:gravity="center">
+    </item>
+</layer-list>

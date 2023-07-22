@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NotesApp</string>
+    <string name="title">Notes</string>
+    <string name="create_your">Create your first note !</string>
+    <string name="title_add">Title</string>
+    <string name="type_something">Type something...</string>
+    <string name="are_your_su">Bạn có chắc chắn xóa không ?</string>
+    <string name="edit_note">Bạn có chắc chắn sửa không ?</string>
+</resources>

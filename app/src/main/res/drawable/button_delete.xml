@@ -1,0 +1,15 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <solid android:color="#3B3B3B" />
+            <corners android:radius="25dp" />
+        </shape>
+    </item>
+
+
+    <item
+        android:drawable="@drawable/icon_delete"
+        android:gravity="center">
+    </item>
+</layer-list>

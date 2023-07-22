@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".note.view.AddNoteActivity"
+    android:background="#252525"
+    android:orientation="vertical"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="53dp"
+        android:clipToOutline="true"
+        android:background="@drawable/button_back"
+
+        />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="260dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="51dp"
+        android:background="@drawable/button_save"
+
+        />
+</LinearLayout>
+    <EditText
+        android:id="@+id/edit_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:hint="@string/title_add"
+        android:textColor="@color/white"
+        android:textColorHint="#9A9A9A"
+        android:textAppearance="@style/title_add"
+        android:gravity="top"
+        />
+    <EditText
+        android:id="@+id/edit_text_content"
+        android:layout_width="360dp"
+        android:layout_height="447dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="37dp"
+        android:textColor="@color/white"
+        android:hint="@string/type_something"
+        android:textColorHint="#9A9A9A"
+        android:textAppearance="@style/type_something"
+        android:gravity="top"
+        />
+</LinearLayout>
