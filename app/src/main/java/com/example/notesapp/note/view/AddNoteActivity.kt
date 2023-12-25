@@ -29,9 +29,15 @@ class AddNoteActivity : AppCompatActivity() {
             finish()
         }
         binding.buttonSave.setOnClickListener {
-            addNote()
-            Toast.makeText(this, "Lưu thành công", Toast.LENGTH_SHORT).show()
-            finish()
+            if(binding.editTextTitle.text.isBlank()){
+                Toast.makeText(this, "Chưa điền thông tin", Toast.LENGTH_SHORT).show()
+            }else{
+                addNote()
+                Toast.makeText(this, "Lưu thành công", Toast.LENGTH_SHORT).show()
+                finish()
+            }
+
+
         }
     }
 

@@ -11,7 +11,6 @@ import com.example.notesapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private val viewModel: NoteViewModel by viewModels()
-
     private lateinit var binding: ActivityMainBinding
     private lateinit var adapter: NoteAdapter
 
@@ -19,7 +18,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         setupViews()
         setupRecyclerView()
         subscribeUI()
@@ -29,7 +27,7 @@ class MainActivity : AppCompatActivity() {
     private fun subscribeUI() {
         viewModel.getListNote()
         viewModel.listNote.observe(this@MainActivity) {
-            adapter.setNotes(it) // Cập nhật dữ liệu cho adapter
+            adapter.setNotes(it)
             if (it.isNotEmpty()) {
                 binding.recyclerView.smoothScrollToPosition(it.size - 1)
             }
@@ -39,9 +37,7 @@ class MainActivity : AppCompatActivity() {
     private fun setupViews() {
         binding.buttonAdd.setOnClickListener {
             startActivity(Intent(this, AddNoteActivity::class.java))
-
         }
-
     }
 
     private fun setupRecyclerView() {

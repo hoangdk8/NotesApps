@@ -45,16 +45,12 @@ class EditNoteActivity : AppCompatActivity() {
             setView(dialogBinding.root)
         }.create()
 
-        // Xử lý sự kiện khi bấm nút "Có"
         dialogBinding.buttonComfirmYes.setOnClickListener {
-            // Thực hiện hành động xóa ghi chú
             updateNote()
             alertDialog.dismiss()
             finish()
             Toast.makeText(this, "Sửa thành công", Toast.LENGTH_LONG).show()
         }
-
-        // Xử lý sự kiện khi bấm nút "Không"
         dialogBinding.buttonComfirmNo.setOnClickListener {
             alertDialog.dismiss()
         }

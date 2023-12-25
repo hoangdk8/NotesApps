@@ -60,7 +60,6 @@
         android:text="@string/create_your"
         android:visibility="gone"
         android:textAppearance="@style/create_your"
-
         />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

@@ -65,7 +65,7 @@
     <TextView
         android:id="@+id/text_view_detail_content"
         android:layout_width="360dp"
-        android:layout_height="447dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_margin="27dp"
         android:layout_alignParentTop="true"
